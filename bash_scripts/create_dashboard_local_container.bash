@@ -1,0 +1,1 @@
+docker run -p 8501:8501 --name c20-muarij-t3-dashboard-local --env-file ../dashboard/.env c20-muarij-t3-dashboard-local:latest

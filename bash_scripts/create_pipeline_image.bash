@@ -1,0 +1,1 @@
+docker build -t c20-muarij-t3-pipeline:latest ../pipeline/.

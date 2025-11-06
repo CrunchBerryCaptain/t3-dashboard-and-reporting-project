@@ -1,0 +1,4 @@
+pandas
+PyMySQL
+python-dotenv
+awswrangler

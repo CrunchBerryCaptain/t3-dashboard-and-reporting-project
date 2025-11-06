@@ -1,0 +1,4 @@
+pandas
+awswrangler
+plotly
+streamlit

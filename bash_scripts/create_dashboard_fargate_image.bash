@@ -1,0 +1,1 @@
+docker build --platform linux/amd64 -t c20-muarij-t3-dashboard-fargate:latest ../dashboard/.

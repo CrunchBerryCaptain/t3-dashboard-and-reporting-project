@@ -1,0 +1,283 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>T3 Food Truck Daily Report - 2025-11-04</title>
+        <style>
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: #f5f5f5;
+                color: #333;
+            }
+            .header {
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                color: white;
+                padding: 30px;
+                border-radius: 10px;
+                margin-bottom: 30px;
+                text-align: center;
+            }
+            .header h1 {
+                margin: 0;
+                font-size: 2em;
+            }
+            .header p {
+                margin: 10px 0 0 0;
+                opacity: 0.9;
+            }
+            .section {
+                background: white;
+                padding: 25px;
+                margin-bottom: 20px;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .section h2 {
+                color: #667eea;
+                border-bottom: 3px solid #667eea;
+                padding-bottom: 10px;
+                margin-top: 0;
+            }
+            .section h3 {
+                color: #764ba2;
+                margin-top: 20px;
+            }
+            .metric-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 15px;
+                margin: 20px 0;
+            }
+            .metric-card {
+                background: #f8f9fa;
+                padding: 20px;
+                border-radius: 8px;
+                border-left: 4px solid #667eea;
+            }
+            .metric-label {
+                font-size: 0.9em;
+                color: #666;
+                margin-bottom: 5px;
+            }
+            .metric-value {
+                font-size: 1.8em;
+                font-weight: bold;
+                color: #333;
+            }
+            .metric-sublabel {
+                font-size: 0.85em;
+                color: #888;
+                margin-top: 5px;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 15px 0;
+            }
+            th {
+                background-color: #667eea;
+                color: white;
+                padding: 12px;
+                text-align: left;
+                font-weight: 600;
+            }
+            td {
+                padding: 12px;
+                border-bottom: 1px solid #e0e0e0;
+            }
+            tr:hover {
+                background-color: #f5f5f5;
+            }
+            .insight {
+                background-color: #fff3cd;
+                border-left: 4px solid #ffc107;
+                padding: 15px;
+                margin: 15px 0;
+                border-radius: 4px;
+            }
+            .insight::before {
+                content: "💡 ";
+                font-weight: bold;
+            }
+            .positive {
+                color: #28a745;
+                font-weight: bold;
+            }
+            .negative {
+                color: #dc3545;
+                font-weight: bold;
+            }
+            .footer {
+                text-align: center;
+                margin-top: 30px;
+                padding: 20px;
+                color: #666;
+                font-size: 0.9em;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>🚚 T3 Food Truck Daily Business Intelligence Report</h1>
+            <p>Report Date: 2025-11-04</p>
+        </div>
+
+        <!-- EXECUTIVE SUMMARY -->
+        <div class="section">
+            <h2>Executive Summary</h2>
+            <div class="metric-grid">
+                <div class="metric-card">
+                    <div class="metric-label">Total Daily Revenue</div>
+                    <div class="metric-value">£5,971.21</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">Most In-Demand Price Point</div>
+                    <div class="metric-value">Medium (£5-10)</div>
+                    <div class="metric-sublabel">54.4% of transactions</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">Best Performing Truck</div>
+                    <div class="metric-value positive">Burrito Madness</div>
+                    <div class="metric-sublabel">£2,536.84</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">Worst Performing Truck</div>
+                    <div class="metric-value negative">Hartmann's Jellied Eels</div>
+                    <div class="metric-sublabel">£110.63</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- COST REDUCTION OPPORTUNITIES -->
+        <div class="section">
+            <h2>Cost Reduction Opportunities</h2>
+            <h3>Underperforming Trucks (Bottom 25%)</h3>
+    
+            <table>
+                <thead>
+                    <tr>
+                        <th>Truck Name</th>
+                        <th>Daily Revenue</th>
+                    </tr>
+                </thead>
+                <tbody>
+        
+                    <tr>
+                        <td>Hartmann's Jellied Eels</td>
+                        <td>£110.63</td>
+                    </tr>
+            
+                    <tr>
+                        <td>Kings of Kebabs</td>
+                        <td>£296.64</td>
+                    </tr>
+            
+                </tbody>
+            </table>
+            <div class="insight">
+                <strong>INSIGHT:</strong> These trucks may need menu optimization, repositioning, or operational review
+            </div>
+        
+        </div>
+
+        <!-- PROFIT OPTIMIZATION STRATEGIES -->
+        <div class="section">
+            <h2>Profit Optimization Strategies</h2>
+            <h3>Truck Efficiency - Revenue per Hour</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Truck Name</th>
+                        <th>Avg Revenue per Hour</th>
+                    </tr>
+                </thead>
+                <tbody>
+    
+                    <tr>
+                        <td>Burrito Madness</td>
+                        <td>£281.87/hour</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Yoghurt Heaven</td>
+                        <td>£176.28/hour</td>
+                    </tr>
+        
+                    <tr>
+                        <td>SuperSmoothie</td>
+                        <td>£124.79/hour</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Kings of Kebabs</td>
+                        <td>£74.16/hour</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Cupcakes by Michelle</td>
+                        <td>£55.28/hour</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Hartmann's Jellied Eels</td>
+                        <td>£12.29/hour</td>
+                    </tr>
+        
+                </tbody>
+            </table>
+            <div class="insight">
+                <strong>INSIGHT:</strong> Lower revenue/hour trucks may benefit from menu simplification or repositioning for faster service
+            </div>
+        </div>
+
+        <!-- DEMAND & MARKET ANALYSIS -->
+        <div class="section">
+            <h2>Demand & Market Analysis</h2>
+            <h3>Price Point Demand Analysis</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Price Segment</th>
+                        <th>Revenue</th>
+                        <th>% of Total Revenue</th>
+                    </tr>
+                </thead>
+                <tbody>
+    
+                    <tr>
+                        <td>Low (£0-5)</td>
+                        <td>£1,727.72</td>
+                        <td>28.9%</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Medium (£5-10)</td>
+                        <td>£3,690.28</td>
+                        <td>61.8%</td>
+                    </tr>
+        
+                    <tr>
+                        <td>High (£10+)</td>
+                        <td>£553.21</td>
+                        <td>9.3%</td>
+                    </tr>
+        
+                </tbody>
+            </table>
+            <div class="insight">
+                <strong>INSIGHT:</strong> Medium (£5-10) segment drives 61.8% of revenue
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Generated automatically by T3 Food Truck Analytics System</p>
+            <p>&copy; 2025 T3 Food Trucks | Business Intelligence Report</p>
+        </div>
+    </body>
+    </html>
+    

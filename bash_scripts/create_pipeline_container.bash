@@ -1,0 +1,1 @@
+docker run --name c20-muarij-t3-pipeline --env-file ../pipeline/.env c20-muarij-t3-pipeline:latest
