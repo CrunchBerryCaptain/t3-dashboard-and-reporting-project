@@ -39,13 +39,13 @@ def get_latest_transaction_date() -> str:
     return LATEST_TRANSACTION_DATE
 
 
-def get_latest_transaction_data(conn: Connection) -> pd.DataFrame:
+def get_latest_transaction_data(connection: Connection) -> pd.DataFrame:
     """ Get new transaction data from RDS newer than the last processed timestamp
         stored in Parameter Store """
 
     latest_transaction_date = get_latest_transaction_date()
 
-    with conn.cursor() as cur:
+    with connection.cursor() as cur:
         sql_query = f"""
         SELECT * FROM FACT_Transaction
         WHERE at > '{latest_transaction_date}';
